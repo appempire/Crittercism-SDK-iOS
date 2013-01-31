@@ -14,8 +14,11 @@
 @class CritterImpl;
 
 @interface Crittercism : NSObject {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
  @private
   CritterImpl *critter_;
+#pragma clang diagnostic pop
 }
 
 //
